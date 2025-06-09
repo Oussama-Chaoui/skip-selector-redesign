@@ -8,15 +8,12 @@ Check out a live version here:
 [View the Demo](https://oussama-chaoui.github.io/skip-selector-redesign/)
 
 ## Preview
-
-![Timeline View](./screenshots/timeline-view.png)  
-![Grid View](./screenshots/grid-view.png)  
-![Chatbot Recommendation](./screenshots/chatbot.png)  
+![Overview](https://github.com/user-attachments/assets/ecf224ce-70fe-401b-b00a-8d061f4485d4)
 
 ## Features
 
 - **Timeline View**  
-  A horizontal timeline UI to browse skip sizes.
+  A vertical timeline UI to browse skip sizes.
 - **Grid View**  
   An enhanced grid layout for side-by-side comparison.
 - **Light & Dark Themes**  
