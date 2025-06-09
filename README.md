@@ -1,54 +1,80 @@
-# React + TypeScript + Vite
+# Skip Selector Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive revamp of the “Choose Your Skip Size” page from WeWantWaste.co.uk—built in React with Vite and Tailwind CSS, featuring both timeline and grid layouts, light/dark modes, and an interactive skip-recommendation chatbot.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out a live version here (URL coming soon):  
+[View the Demo](https://your-demo-url.com)
 
-## Expanding the ESLint configuration
+## Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Timeline View](./screenshots/timeline-view.png)  
+![Grid View](./screenshots/grid-view.png)  
+![Chatbot Recommendation](./screenshots/chatbot.png)  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
+## Features
+
+- **Timeline View**  
+  A horizontal timeline UI to browse skip sizes.
+- **Grid View**  
+  An enhanced grid layout for side-by-side comparison.
+- **Light & Dark Themes**  
+  Toggleable themes powered by Tailwind v4 defaults.
+- **Skip Recommendation Bot**  
+  A small chatbot (using `react-chatbot-kit`) to guide users toward the right skip.
+- **Fully Responsive**  
+  Optimized for mobile and desktop browsers.
+
+## Design Process
+
+1. **Analysis & Inspiration**  
+   Reviewed the original grid-based design, then brainstormed alternative layouts with ChatGPT and DeepSeek.  
+2. **Timeline Concept**  
+   Settled on a timeline format for clarity and visual interest, and implemented it in React.  
+3. **Theme Support**  
+   Added light and dark modes to match Tailwind CSS v4’s default theming with Vite.  
+4. **Intelligent Guidance**  
+   Built a mini chatbot to help users choose the correct skip size when they’re unsure.  
+5. **Grid Enhancement**  
+   After the timeline was complete, revisited the original grid to apply improvements and compare both approaches.
+
+## Tech Stack
+
+- **Framework:** React 19.1 + Vite  
+- **Styling:** Tailwind CSS 4.1  
+- **Animation:** Framer Motion  
+- **Icons:** Lucide React  
+- **Viewport:** react-intersection-observer  
+- **Tilt Effects:** tilt.js  
+- **Chatbot:** react-chatbot-kit  
+
+### Dependencies
+
+```jsonc
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
+    "framer-motion": "^12.16.0",
+    "lucide-react": "^0.513.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-chatbot-kit": "^2.2.2",
+    "react-intersection-observer": "^9.16.0",
+    "tailwindcss": "^4.1.8",
+    "tilt.js": "^1.2.1"
   },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+  }
+}
