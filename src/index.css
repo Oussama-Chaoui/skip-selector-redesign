@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────────────  
+   Light Mode Colors
+   ────────────────────────────────────────────────────── */
+@theme {
+  --color-background: white;
+  --color-background-secondary: #0a1427;
+  --color-card-light: #ffffff;
+  --color-card-light-secondary: #f1f5f9;
+
+  --color-text: black;
+  --color-text-secondary: white;
+  --color-heading: #000000;
+  --color-muted: #1c1e20;
+
+  --color-border: #cbd5e1;
+
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+
+  --color-accent-500: #38b2ac;
+  --color-accent-600: #319795;
+  --color-accent-700: #2c7a7b;
+
+  --color-alert-50: #fffbeb;
+  --color-alert-100: #fef3c7;
+  --color-alert-200: #fde68a;
+  --color-alert-300: #fcd34d;
+  --color-alert-400: #fbbf24;
+  --color-alert-500: #f59e0b;
+  --color-alert-600: #d97706;
+  --color-alert-700: #b45309;
+  --color-alert-800: #92400e;
+  --color-alert-900: #78350f;
+}
+
+/* ──────────────────────────────────────────────────────  
+   Dark Mode Colors (Updated)
+   ────────────────────────────────────────────────────── */
+@layer theme {
+  .dark {
+    --color-background: #0a1427;
+    --color-background-secondary: white;
+    --color-card-dark: #0f1c35;
+    --color-card-dark-secondary: #1a2d5f;
+
+    --color-text: #cbd5e1;
+    --color-heading: #e2e8f0;
+    --color-muted: #94a3b8;
+
+    --color-border-dark: #2c5282;
+
+    --color-primary-50: #0a1427;
+    --color-primary-100: #0f1c35;
+    --color-primary-200: #1a2d5f;
+    --color-primary-300: #254699;
+    --color-primary-400: #2a55b8;
+    --color-primary-500: #3a6bda;
+    --color-primary-600: #5d8af0;
+    --color-primary-700: #7da5ff;
+    --color-primary-800: #a0c4ff;
+    --color-primary-900: #d0e0ff;
+
+    --color-accent-500: #38b2ac;
+    --color-accent-600: #4fd1c5;
+    --color-accent-700: #81e6d9;
+
+    --color-alert-50: #78350f;
+    --color-alert-100: #92400e;
+    --color-alert-200: #b45309;
+    --color-alert-300: #d97706;
+    --color-alert-400: #f59e0b;
+    --color-alert-500: #fbbf24;
+    --color-alert-600: #fcd34d;
+    --color-alert-700: #fde68a;
+    --color-alert-800: #fef3c7;
+    --color-alert-900: #fffbeb;
+  }
+}
+
+.text-heading {
+  color: var(--color-heading);
+}
+.text-muted {
+  color: var(--color-muted);
+}
+
+.border-border {
+  border-color: var(--color-border);
+}
+.border-border-dark {
+  border-color: var(--color-border-dark);
+}
+
+.dark .text-heading {
+  color: var(--color-heading);
+}
+.dark .text-muted {
+  color: var(--color-muted);
+}
+.dark .bg-card-light {
+  background-color: var(--color-card-dark);
+}
+.dark .bg-card-light-secondary {
+  background-color: var(--color-card-dark-secondary);
+}
+
+body,
+html {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Scrollbar style */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-600) var(--color-card-light-secondary);
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+html::-webkit-scrollbar-track {
+  background: var(--color-card-light-secondary);
+  border-radius: 3px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-400);
+  border-radius: 3px;
+}
+
+.dark html {
+  scrollbar-color: var(--color-primary-300) var(--color-card-dark-secondary);
+}
+.dark html::-webkit-scrollbar-track {
+  background: var(--color-card-dark-secondary);
+}
+.dark html::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-700);
+}
+
+/* Background colors */
+.bg-card-light {
+  background-color: var(--color-card-light);
+}
+.bg-card-light-secondary {
+  background-color: var(--color-card-light-secondary);
+}
+.bg-card-dark {
+  background-color: var(--color-card-dark);
+}
+.bg-card-dark-secondary {
+  background-color: var(--color-card-dark-secondary);
+}
+
