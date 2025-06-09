@@ -6,7 +6,7 @@ import SelectedSkipSummary from './components/SelectedSkipSummary'
 import SkipComparisonModal from './components/SkipComparisonModal'
 import HelpChatBot from '../../common/components/HelpChatBot'
 
-const PremiumTimeline = () => {
+const TimelineDesign = () => {
   const { skips, loading, error } = useSkips()
   const [selectedSkip, setSelectedSkip] = useState<SkipOption | null>(null)
   const [activeSize, setActiveSize] = useState<number | null>(null)
@@ -113,4 +113,4 @@ const PremiumTimeline = () => {
   )
 }
 
-export default PremiumTimeline
+export default TimelineDesign
