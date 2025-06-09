@@ -6,6 +6,8 @@ export const useSkips = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
+  const IMAGE_BASE = 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes'
+
   useEffect(() => {
     async function fetchSkips() {
       try {
@@ -25,6 +27,7 @@ export const useSkips = () => {
             perTonneCost: s.per_tonne_cost,
             priceBeforeVat: s.price_before_vat,
             vat: s.vat,
+            imageUrl: `${IMAGE_BASE}/${s.size}-yarder-skip.jpg`,
             postcode: s.postcode,
             area: s.area,
             forbidden: s.forbidden,

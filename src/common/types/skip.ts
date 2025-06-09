@@ -23,6 +23,7 @@ export interface SkipOption {
   perTonneCost: number | null;
   priceBeforeVat: number;
   vat: number;
+  imageUrl?: string;
   postcode: string;
   area: string;
   forbidden: boolean;
