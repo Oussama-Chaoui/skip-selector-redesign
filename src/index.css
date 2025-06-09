@@ -41,14 +41,14 @@
   --color-alert-700: #b45309;
   --color-alert-800: #92400e;
   --color-alert-900: #78350f;
-}
+} 
 
 /* ──────────────────────────────────────────────────────  
    Dark Mode Colors (Updated)
    ────────────────────────────────────────────────────── */
 @layer theme {
   .dark {
-    --color-background: #0a1427;
+    --color-background: #070b15;
     --color-background-secondary: white;
     --color-card-dark: #0f1c35;
     --color-card-dark-secondary: #1a2d5f;
