@@ -4,8 +4,8 @@ A modern, responsive revamp of the “Choose Your Skip Size” page from WeWantW
 
 ## Demo
 
-Check out a live version here (URL coming soon):  
-[View the Demo](https://your-demo-url.com)
+Check out a live version here:  
+[View the Demo](https://oussama-chaoui.github.io/skip-selector-redesign/)
 
 ## Preview
 
