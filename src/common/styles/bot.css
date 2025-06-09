@@ -1,0 +1,115 @@
+.react-chatbot-kit-chat-container {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.react-chatbot-kit-chat-message-container {
+  flex: 1 1 auto !important;
+  height: 372px !important;
+  overflow-y: auto !important;
+  padding: 16px !important;
+  background-color: var(--color-card-light) !important;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-card-light) 0%,
+    var(--color-card-light-secondary) 100%
+  ) !important;
+  scrollbar-width: thin !important;
+}
+
+.dark .react-chatbot-kit-chat-message-container {
+  background-color: var(--color-card-dark) !important;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-card-dark) 0%,
+    var(--color-card-dark-secondary) 100%
+  ) !important;
+}
+
+.react-chatbot-kit-chat-bot-message-container {
+  margin: 12px 0 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.react-chatbot-kit-chat-bot-avatar-container {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 12px !important;
+  background: linear-gradient(135deg, var(--color-primary-400), var(--color-primary-600)) !important;
+  flex-shrink: 0 !important;
+}
+
+.react-chatbot-kit-chat-bot-avatar-letter {
+  color: white !important;
+  font-size: 16px !important;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  color: var(--color-text) !important;
+  background-color: var(--color-primary-200) !important;
+  padding: 12px 16px !important;
+  border-radius: 18px !important;
+  border-top-left-radius: 4px !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  max-width: 80% !important;
+}
+
+.dark .react-chatbot-kit-chat-bot-message {
+  background-color: var(--color-card-dark-secondary) !important;
+}
+
+.react-chatbot-kit-chat-bot-message-arrow {
+  border-right: 8px solid var(--color-primary-200) !important;
+}
+
+.react-chatbot-kit-user-chat-message-container {
+  margin: 12px 0 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.react-chatbot-kit-user-chat-message {
+  background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-600)) !important;
+  color: var(--color-text) !important;
+  padding: 12px 16px !important;
+  border-radius: 18px !important;
+  border-top-right-radius: 4px !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  max-width: 80% !important;
+}
+
+.react-chatbot-kit-chat-input-container {
+  display: none !important;
+}
+
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar-track {
+  background: var(--color-card-light-secondary) !important;
+  border-radius: 3px !important;
+}
+
+.dark .react-chatbot-kit-chat-message-container::-webkit-scrollbar-track {
+  background: var(--color-card-dark-secondary) !important;
+}
+
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-300) !important;
+  border-radius: 3px !important;
+}
+
+.dark .react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-700) !important;
+}
